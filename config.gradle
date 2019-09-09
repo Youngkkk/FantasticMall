@@ -1,0 +1,118 @@
+ext {
+
+
+    isAlone = false //false:作为Lib组件存在， true:作为application存在
+
+    android = [
+
+            compileSdkVersion: 29,
+            buildToolsVersion: "28.0.3",
+            minSdkVersion    : 19,
+            targetSdkVersion : 28,
+            versionCode      : 1,
+            versionName      : '1.0.0',
+    ]
+
+
+    libsVersion = [
+            // App dependencies version
+            supportLibraryVersion = "28.0.0",
+            retrofitVersion = "2.1.0",
+            glideVersion = "4.8.0",
+            loggerVersion = "1.15",
+            gsonVersion = "2.8.0",
+            butterknife = "8.8.0",
+            retrofit = "2.3.0",
+            rxjava = "2.1.1",
+            rxjava_android = "2.0.1",
+            rxlifecycle = "3.0.0",
+            rxlifecycle_components = "3.0.0",
+            greenDao = "3.2.2",
+            arouter_api = "1.5.0",
+            arouter_compiler = "1.2.2",
+            transformations = "4.0.1",
+            rxjava_adapter = "2.3.0",
+            gson_converter = "2.3.0",
+            scalars_converter = "2.3.0",
+            rxpermission = "2.0.1",
+            support_v4 = "25.4.0",
+            okhttp3 = "3.12.0",
+            cookieJar = "v1.0.1",
+
+            multidex = "1.0.2",
+
+            zip4jVersion = '1.3.2',
+            stethoVersion = "1.5.0",
+
+            greenDaoVersion = "3.2.2",
+
+            android_log4j = "1.0.3",
+            log4j = "1.2.17",
+
+            sqlcipher = "4.2.0@aar",
+
+            ok_download_api = "1.0.5",
+
+            fast_json = "1.2.58",
+
+            statebar = "1.0.5",
+    ]
+
+    dependencies = [
+            appcompatV7               : "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion",
+            design                    : "com.android.support:design:$rootProject.supportLibraryVersion",
+            cardview                  : "com.android.support:cardview-v7:$rootProject.supportLibraryVersion",
+            palette                   : "com.android.support:palette-v7:$rootProject.supportLibraryVersion",
+            recycleview               : "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion",
+            support_v4                : "com.android.support:support-v4:$rootProject.support_v4",
+            annotations               : "com.android.support:support-annotations:$rootProject.supportLibraryVersion",
+            glide                     : "com.github.bumptech.glide:glide:$rootProject.glideVersion",
+            gson                      : "com.google.code.gson:gson:$rootProject.gsonVersion",
+            logger                    : "com.orhanobut:logger:$rootProject.loggerVersion",
+            butterknife               : "com.jakewharton:butterknife:$rootProject.butterknife",
+            butterknife_compiler      : "com.jakewharton:butterknife-compiler:$rootProject.butterknife",
+            retrofit                  : "com.squareup.retrofit2:retrofit:$rootProject.retrofit",
+            okhttp3                   : "com.squareup.okhttp3:okhttp:$rootProject.okhttp3",
+            cookie_jar                : "com.github.franmontiel:PersistentCookieJar:$rootProject.cookieJar",
+
+            retrofit_adapter_rxjava2  : "com.squareup.retrofit2:adapter-rxjava2:$rootProject.rxjava_adapter",
+            retrofit_converter_gson   : "com.squareup.retrofit2:converter-gson:$rootProject.gson_converter",
+            retrofit_converter_scalars: "com.squareup.retrofit2:converter-scalars:$rootProject.scalars_converter",
+            rxpermission              : "pub.devrel:easypermissions:$rootProject.rxpermission",
+            rxjava2                   : "io.reactivex.rxjava2:rxjava:$rootProject.rxjava",
+            rxjava2_android           : "io.reactivex.rxjava2:rxandroid:$rootProject.rxjava_android",
+            rxlifecycle2              : "com.trello.rxlifecycle3:rxlifecycle:$rootProject.rxlifecycle",
+            rxlifecycle2_components   : "com.trello.rxlifecycle3:rxlifecycle-components:$rootProject.rxlifecycle_components",
+            greenDao                  : "org.greenrobot:greendao:$rootProject.greenDao",
+            transformations           : "jp.wasabeef:glide-transformations:$rootProject.transformations",
+            multidex                  : "com.android.support:multidex:$rootProject.multidex",
+            //路由通讯
+            arouter_api               : "com.alibaba:arouter-api:$rootProject.arouter_api",
+            arouter_compiler          : "com.alibaba:arouter-compiler:$rootProject.arouter_compiler",
+
+            //Bugly
+            bugly                     : "com.tencent.bugly:crashreport:latest.release",
+            bugly_ndk                 : "com.tencent.bugly:nativecrashreport:latest.release",
+
+            zip4j                     : "net.lingala.zip4j:zip4j:$rootProject.zip4jVersion",
+            stetho                    : "com.facebook.stetho:stetho:$rootProject.stethoVersion",
+
+            greendao                  : "org.greenrobot:greendao:$rootProject.greenDaoVersion",
+
+            //日志
+            android_log4j             : "de.mindpipe.android:android-logging-log4j:$rootProject.android_log4j",
+            log4j                     : "log4j:log4j:$rootProject.log4j",
+
+            sqlcipher                 : "net.zetetic:android-database-sqlcipher:$rootProject.sqlcipher",
+
+            //下载
+            okddownload               : "com.liulishuo.okdownload:okdownload:$rootProject.ok_download_api",
+            okdsqlite                 : "com.liulishuo.okdownload:sqlite:$rootProject.ok_download_api",
+            okdhttp                   : "com.liulishuo.okdownload:okhttp:$rootProject.ok_download_api",
+            //im
+            netty                     : "io.netty:netty-all:5.0.0.Alpha2",
+            fastjson                  : "com.alibaba:fastjson:$rootProject.fast_json",
+
+            statebar                  : "com.yanzhenjie:sofia:$rootProject.statebar"
+    ]
+}
