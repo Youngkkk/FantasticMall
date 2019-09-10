@@ -1,1 +1,1 @@
-include ':app', ':CommonComponent', ':ProviderComponent'
+include ':app', ':CommonComponent', ':ProviderComponent', ':UserCenter'
